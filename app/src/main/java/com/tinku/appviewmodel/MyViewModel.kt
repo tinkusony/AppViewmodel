@@ -4,9 +4,9 @@ package com.tinku.appviewmodel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class MyViewModel : ViewModel() {
+class MyViewModel(val defValue:Int) : ViewModel() {
 
-    private var _count = 0
+    private var _count = defValue
 
     var count: MutableLiveData<Int> = MutableLiveData(_count)
 

@@ -55,6 +55,5 @@ dependencies {
 
     // ViewModel
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
-    // LiveData
 
 }

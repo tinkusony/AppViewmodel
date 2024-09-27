@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         txt = findViewById(R.id.txtCount)
         btn = findViewById(R.id.btnIncrement)
 
-        myViewModel = ViewModelProvider(this)[MyViewModel::class.java]
+        myViewModel = ViewModelProvider(this,MyFactory(3))[MyViewModel::class.java]
 
         /*  fun setText() {
               binding.txtCount.text = mainViewModel.count.toString()
